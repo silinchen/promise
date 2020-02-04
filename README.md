@@ -463,3 +463,7 @@ Promise.prototype.finally = function (callback) {
 [阮一峰 - Promise 对象 - ECMAScriptS 6入门](http://es6.ruanyifeng.com/#docs/promise)
 
 [Promise - JavaScript | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
+
+
+觉得对您有帮助的，可以给我点个小 star。谢谢哦^_^
