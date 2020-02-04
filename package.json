@@ -1,0 +1,19 @@
+{
+  "name": "promise",
+  "version": "1.0.0",
+  "description": "a promise implementations",
+  "main": "promise.js",
+  "scripts": {
+    "test": "promises-aplus-tests promise.js"
+  },
+  "keywords": [
+    "promise",
+    "promises",
+    "a+"
+  ],
+  "author": "silinchen",
+  "license": "ISC",
+  "devDependencies": {
+    "promises-aplus-tests": "^2.1.2"
+  }
+}
