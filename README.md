@@ -261,6 +261,16 @@ Promise.defer = Promise.deferred = function () {
 
 测试使用工具 [promises-aplus-test](https://github.com/promises-aplus/promises-tests)
 
+安装：
+
+`npm install -g promises-aplus-test`
+
+测试: 
+
+`promise-aplus-test promise.js`
+
+使用本文提供的 [github源码](https://github.com/silinchen/promise) 则可以直接运行以下命令：
+
 ```shell
 // 安装依赖工具
 npm install
@@ -444,11 +454,7 @@ Promise.prototype.finally = function (callback) {
 
  
 
-
-
-
-
-参考文档：
+### 参考文档：
 
 [Promises/A+ 规范（译文）](https://silinchen.com/p/promises-a-plus)
 
@@ -456,4 +462,4 @@ Promise.prototype.finally = function (callback) {
 
 [阮一峰 - Promise 对象 - ECMAScriptS 6入门](http://es6.ruanyifeng.com/#docs/promise)
 
-[](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+[Promise - JavaScript | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise)
