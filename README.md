@@ -4,7 +4,11 @@
 
 `new Promise` 时，需要传递一个 executor 执行器，执行器立刻执行（同步执行），executor 接受两个参数，分别是 resolve（成功） 和 reject（失败）。
 
-promise 有 3 个状态：pending（等待态）、fulfilled（成功态）、rejected（失败态）
+promise 有 3 个状态：
+
+	- *pending*：初始状态，既不是成功，也不是失败状态。
+	- *fulfilled*：成功状态，意味着操作成功完成。
+	- *rejected*：失败状态，意味着操作失败。
 
 ```javascript
 const PENDING = Symbol('PENDING')
@@ -136,7 +140,7 @@ Promise.prototype.then = function(onFulfilled, onRejected) {
 
 `resolvePromise` 主要实现的功能是：
 
-1. 判断 `promise` 和 `x` 是否指向同一对象，如果是 `promise2` 执行失败并且使用 TypeError 作为执行失败的原因。
+1. 判断 `promise2` 和 `x` 是否指向同一对象，如果是 `promise2` 执行失败并且使用 TypeError 作为执行失败的原因。
 
    例如：
 
@@ -261,13 +265,9 @@ Promise.defer = Promise.deferred = function () {
 
 测试使用工具 [promises-aplus-test](https://github.com/promises-aplus/promises-tests)
 
-安装：
+安装：`npm install -g promises-aplus-test`
 
-`npm install -g promises-aplus-test`
-
-测试: 
-
-`promise-aplus-test promise.js`
+测试：`promise-aplus-test promise.js`
 
 使用本文提供的 [github源码](https://github.com/silinchen/promise) 则可以直接运行以下命令：
 
@@ -467,3 +467,11 @@ Promise.prototype.finally = function (callback) {
 
 
 觉得对您有帮助的，可以给我点个小 star。谢谢哦^_^
+
+扫下方二维码或微信搜索，关注公众号「天才前端计划」，回复“Promise原理”获取资源。
+
+视频来自互联网，仅供个人学习。
+
+![公众号 天才前端计划](https://github.com/silinchen/mvvm/blob/master/img/qrcode_for_天才前端计划.jpg)
+
+谢谢您的支持^_^
