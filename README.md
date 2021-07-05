@@ -6,9 +6,9 @@
 
 promise 有 3 个状态：
 
-	- *pending*：初始状态，既不是成功，也不是失败状态。
-	- *fulfilled*：成功状态，意味着操作成功完成。
-	- *rejected*：失败状态，意味着操作失败。
+- *pending*：初始状态，既不是成功，也不是失败状态。
+- *fulfilled*：成功状态，意味着操作成功完成。
+- *rejected*：失败状态，意味着操作失败。
 
 ```javascript
 const PENDING = Symbol('PENDING')
